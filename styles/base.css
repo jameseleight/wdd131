@@ -37,7 +37,7 @@ nav li{
 
 .navigation-home {
   grid-row: 2 / 3;
-  height: .8fr;
+  height: 3rem;
   margin: 0rem;
   padding: 0rem;
   display: flex;
@@ -167,7 +167,6 @@ h3 {
   font-style: italic;
   font-size: 12px;
   justify-self: center;
-  text-justify: center;
   color: rgba(100, 100, 100, 0.9);
 }
 
