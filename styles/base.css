@@ -1,7 +1,7 @@
 body {
   display: grid;
   height: 100vh;
-  grid-template: auto 1fr auto / 1fr;
+  grid-template: .7fr 5fr .5fr / 1fr;
 }
 
 header {
@@ -9,6 +9,8 @@ header {
   padding: 0rem;
   grid-column: 1 / 1;
   text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
   font-family: 'Montserrat Alternates', sans-serif;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 200;
@@ -17,6 +19,11 @@ header {
 h1 {
   font-weight: 400;
   font-size: 16px;
+  align-self: center;
+}
+
+nav {
+  align-self: end;
 }
 
 nav li{
@@ -30,9 +37,13 @@ nav li{
   text-decoration: none;
 }
 
-.course-title {
-  display: block;
-  color: rgba(255, 255, 255, 0.9);
+.navigation-home a:hover {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1D4D72;
+  background:#bbb;
+  border-radius: 2px;
+  text-decoration: none;
 }
 
 .navigation-home {
@@ -52,7 +63,7 @@ main {
   width: 90%;
   margin: 0 auto;
   display: grid;
-  grid-template: 80px auto / 1fr .5fr;
+  grid-template: .3fr auto / 1fr .5fr;
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 400;
 }
@@ -60,17 +71,17 @@ main {
 h2 {
   grid-column: 1 / 4;
   grid-row: 1 / 2;
+  font-size: 2rem;
   justify-self: center;
   height: 1rem;
   width: auto;
   font-weight: 600;
-  font-size: 32px;
   color: #333;
 }
 
 .card {
   display: grid;
-  grid-template: 50px 150px auto auto / auto auto auto auto;
+  grid-template: 1fr 2fr auto auto / auto auto auto auto;
   margin: 1rem 0.5rem;
   border: 1px solid #aaa;
   border-radius: 10px;
@@ -87,6 +98,7 @@ h3 {
   font-weight: 600;
   font-size: 14px;
   text-align: center;
+  white-space: nowrap;
   border-radius: 10px 10px 0 0;
   padding: 1rem;
   margin: 0;
@@ -100,15 +112,20 @@ h3 {
   margin: 1rem;
 }
 
+.portrait-image {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+  width: 8rem;
+  height: auto;
+  margin: 1rem 1rem 1rem 0rem;
+  border: 1px solid #aaa;
+}
+
 .homeText {
   grid-column: 2 / 4;
   grid-row: 4 / 5;
   font-size: 12px;
   line-height: 1.5rem;
-}
-
-.webdev {
-  grid-row: 2 / 3;
   margin: 1rem;
 }
 
@@ -117,21 +134,47 @@ h3 {
   grid-row: 3 / 4;
   font-size: 16px;
   margin: 1rem;
-  padding: 0 10rem;
+  padding: .2rem 10rem;
   font-weight: 700;
   justify-self: center;
+  white-space: nowrap;
   border-bottom: 1px solid #555;
 }
 
+.captionedFlagImage {
+  grid-column: 1 / 2;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.flag-image {
+  width: 12rem;
+  height: auto;
+  border: 1px solid #aaa;
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+.captionFlag {
+  font-family: "Aldrich", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 12px;
+  align-self: center;
+  color: rgba(50, 50, 50, 0.9);
+}
 .navigation-webdev {
-  margin: 0;
+  grid-column: 1 / 2;
+  grid-row: 1 / 5;
+  justify-items:left;
+  align-self:center;
 }
 
 .navigation-webdev a {
   font-family: "Aldrich", sans-serif;
-  font-size: 12px;
-  margin: 0;
+  font-size: 13px;
   text-decoration-color: blue;
+  white-space: nowrap;
 }
 
 .navigation-webdev a:hover {
@@ -142,33 +185,6 @@ h3 {
   border-radius: 2px;
 }
 
-.portrait-image {
-  grid-column: 4 / 5;
-  grid-row: 2 / 4;
-  width: 120px;
-  height: auto;
-  margin: 1rem;
-  border: 1px solid #aaa;
-}
-
-.flag-image {
-  grid-column: 1 / 3;
-  grid-row: 4 / 5;
-  width: 250px;
-  height: auto;
-  border: 1px solid #aaa;
-  margin: 1rem;
-}
-
-.captionFlag {
-  grid-column: 1 / 2;
-  font-family: "Aldrich", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-  font-size: 12px;
-  justify-self: center;
-  color: rgba(100, 100, 100, 0.9);
-}
 
 footer {
   background: #1D4D72;
@@ -181,12 +197,12 @@ footer {
 .name-info {
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
-  padding: .4rem;
+  padding: .3rem;
   margin: 0;
 }
 
 .modified {
   color: rgba(255, 255, 0, 0.9);
   font-size: 10px;
-  margin: 0;
+  margin: 0rem;
 }
