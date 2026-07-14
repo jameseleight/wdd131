@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    background-color: rgb(60, 0, 60);
+    display: block;
+    margin: 0 auto;
+}
+
+header p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+#menu {
+	display: flex;
+    align-items: center;
+    gap: 2rem;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: rgb(60, 0, 60);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#menu::before {
+    content: "≡";
+    color: white;
+    text-align: right;
+    display: block;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.temples-navigation.show a {
+    display: block;
+    padding: .5rem 1.25rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.9);
+    list-style-type: none;
+    text-decoration: none;
+    text-align: left;
+}
+
+.temples-navigation.show a:hover {
+  background-color: white;
+  font-weight: 600;
+  color: rgba(60, 0, 60, 1);
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.temples-navigation.show a:active {
+    display: block;
+    padding: .5rem 1.25rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+    background-color: rgb(192, 0, 192);
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: left;
+}
+
+.temples-navigation {
+    list-style-type: none;
+}
+
+.temples-navigation a {
+    display: none;
+    padding: .5rem 1.25rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.9);
+    list-style-type: none;
+    text-decoration: none;
+    text-align: left;
+}
+
+figure img {
+    display: block;
+    margin: 0 auto;
+    width: 25em;
+    height: auto;
+    padding: .75em;
+}
+
+figcaption {
+    color: rgba(60, 0, 60, 1);
+    font-family: Roboto, sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+    text-align: center;
+    padding: .2rem;
+}
+
+footer {
+    background: rgba(60, 0, 60, 1);
+    text-align: center;
+    grid-column: 1 / 1;
+    padding: 1rem;
+    color: white;
+}
