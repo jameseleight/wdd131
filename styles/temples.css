@@ -12,7 +12,7 @@ body {
 
 header {
     background-color: rgb(60, 0, 60);
-    max-width: 1fr;
+    max-width: 100%;
     margin: 0 .5rem;
 }
 
@@ -89,7 +89,7 @@ header h1 {
 }
 
 main {
-    max-width: 1fr;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -100,7 +100,6 @@ figure {
 }
 
 figure img {
-    /* display: block; */
     width: 100%;
     height: auto;
     padding: .5em;
@@ -115,7 +114,7 @@ figure figcaption {
 }
 
 footer {
-    max-width: 1fr;
+    max-width: 100%;
     margin: 0 .5rem;
     background: rgba(60, 0, 60, 1);
     color: rgba(255, 255, 255, 0.9);
