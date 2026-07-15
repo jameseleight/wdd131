@@ -6,118 +6,120 @@
 
 body {
     font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     background-color: rgb(60, 0, 60);
-    display: block;
-    margin: 0 auto;
+    max-width: 1fr;
+    margin: 0 .5rem;
 }
 
-header p {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 1rem;
+header a {
+    padding: 10rem;
+    align-items: end;
+}
+
+header h1 {
+    background-color: white;
+    color: rgb(60, 0, 60, 0.95);
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+#bigmenu {
+    display: none;
 }
 
 #menu {
-	display: flex;
-    align-items: center;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+	text-decoration: none;
 	font-size: 2rem;
 	font-weight: 700;
-	text-decoration: none;
 	padding: .5rem .75rem;
 	background-color: rgb(60, 0, 60);
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, .95);
 }
 
-#menu::before {
+#menu::after {
     content: "≡";
-    color: white;
-    text-align: right;
-    display: block;
 }
 
-.show li {
-    display: block;
-}
-
-#menu.show::before {
+#menu.show::after {
     content: "X";
-    color: white;
-    font-size: 2rem;
-    font-weight: 800;
 }
 
+.temples-navigation {
+    display: none;
+}
+
+.temples-navigation.show {
+    display: block;
+}
+    
 .temples-navigation.show a {
     display: block;
-    padding: .5rem 1.25rem;
+    padding: .5rem 0.75rem;
     font-size: 1.2rem;
     font-weight: 200;
-    color: rgba(255, 255, 255, 0.9);
-    list-style-type: none;
+    color: rgba(255, 255, 255, 0.95);
     text-decoration: none;
-    text-align: left;
+    text-align: right;
 }
 
 .temples-navigation.show a:hover {
   background-color: white;
+  color: rgba(60, 0, 60, .95);
   font-weight: 600;
-  color: rgba(60, 0, 60, 1);
   list-style-type: none;
   text-decoration: none;
 }
 
 .temples-navigation.show a:active {
-    display: block;
-    padding: .5rem 1.25rem;
-    font-size: 1.2rem;
-    font-weight: 200;
-    background-color: rgb(192, 0, 192);
-    color: white;
+    padding: 1.5rem 1.75rem;
+    background-color: rgb(192, 0, 192, 1);
+    color: rgba(255, 255, 255, 0.95);
+    text-align: center;
     list-style-type: none;
     text-decoration: none;
-    text-align: left;
 }
 
-.temples-navigation {
-    list-style-type: none;
+main {
+    max-width: 1fr;
+    margin: 0 auto;
 }
 
-.temples-navigation a {
-    display: none;
-    padding: .5rem 1.25rem;
-    font-size: 1.2rem;
-    font-weight: 200;
-    color: rgba(255, 255, 255, 0.9);
-    list-style-type: none;
-    text-decoration: none;
-    text-align: left;
+figure {
+    width: 100%;
+    height: auto;
+    padding: 0;
 }
 
 figure img {
-    display: block;
-    margin: 0 auto;
-    width: 25em;
+    /* display: block; */
+    width: 100%;
     height: auto;
-    padding: .75em;
+    padding: .5em;
 }
 
-figcaption {
-    color: rgba(60, 0, 60, 1);
-    font-family: Roboto, sans-serif;
-    font-size: .8rem;
+figure figcaption {
+    color: rgb(60, 0, 60, 0.95);
+    font-size: 1rem;
     font-weight: 600;
     text-align: center;
-    padding: .2rem;
+    padding: 0.2rem;
 }
 
 footer {
+    max-width: 1fr;
+    margin: 0 .5rem;
     background: rgba(60, 0, 60, 1);
+    color: rgba(255, 255, 255, 0.9);
     text-align: center;
-    grid-column: 1 / 1;
     padding: 1rem;
-    color: white;
+    margin: .5rem .5rem 0 .5rem;
 }
