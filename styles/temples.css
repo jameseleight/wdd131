@@ -58,7 +58,8 @@ header h1 {
 }
 
 .temples-navigation.show {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
     
 .temples-navigation.show a {
