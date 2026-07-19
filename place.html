@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals W03 Assignment - James E. Leight</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals W03 place, James E. Leight, Keywords: WebDev, computer science, design">
+    <meta name="author" content="James E. Leight">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place-mobile.css">
+    <link rel="stylesheet" href="styles/place-landscape.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/getDataWeather.js" defer></script>
+</head>
+<body>
+    <header id="mobileHeader">DR Congo</header>
+    <header id="deskHeader">Democratic Republic of Congo</header>
+    <main class="hero">
+        <picture>
+            <source srcset="images/hero-bonobo-family-landscape.webp" media="(min-width: 520px)">
+            <img src="images/hero-bonobo-stock-portrait.webp" alt="Bonobo in wilderness in DRC" width="325" height="487">
+        </picture>
+        <section class="dataSection">
+            <h2>Data</h2>
+            	<div class="datatable">
+		            <div class="row">
+			            <div class="col1">Area: </div>
+			            <div class="col2"><span id="countryArea"></span> km<sup>2</sup></div>
+                    </div>
+                    <div class="row">
+                        <div class="col1">Population: </div>
+                        <div class="col2"><span id="countryPopulation"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col1">Capital: </div>
+                        <div class="col2"><span id="countryCapital"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col1">Languages: </div>
+                        <div class="col2"><span id="countryLanguage"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col1">Currency: </div>
+                        <div class="col2"><span id="countryCurrency"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col1">Time Zone: </div>
+                        <div class="col2"><span id="countryTimeZone"></span></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col1">Calling Code: </div>
+                        <div class="col2"><span id="countryCallingCode"></span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col1">Internet TLD: </div>
+                        <div class="col2"><span id="countryTLD"></span></div>
+                    </div>
+                </div>
+        </section>
+        <section class="weatherSection">
+            <h2>Weather</h2>
+            <!-- ⛅🌦️ -->
+            <img src="images/sun.svg" alt="weather icon">
+            <div class="datatable">
+                <div class="row">
+                    <div class="col1">Temperature: </div>
+                    <div class="col2"><span id="kanangaTemperature"></span> &deg;C</div>
+                </div>
+                <div class="row">
+                    <div class="col1">Conditions: </div>
+                    <div class="col2"><span id="kanangaConditions"></span></div>
+                </div>
+                <div class="row">
+                    <div class="col1">Wind: </div>
+                    <div class="col2"><span id="kanangaWind"></span> kph</div>
+                </div>
+                <div class="row">
+                    <div class="col1">Wind Chill: </div>
+                    <div class="col2"><span id="kanangaWindChill"></span> &deg;C</div>
+                </div>
+            </div>
+        </section>        
+    </main>
+    <footer contenteditable>
+        <p class="name-info">&copy;<span id="currentyear"></span> 🎸 James Eric Leight 🎸 U.S.A</p>
+        <p class="modified">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

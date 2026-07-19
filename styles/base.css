@@ -150,7 +150,7 @@ h3 {
 }
 
 .flag-image {
-  width: 12rem;
+  width: 100%;
   height: auto;
   border: 1px solid #aaa;
   margin: 1rem 0rem 1rem 0rem;
@@ -175,7 +175,7 @@ h3 {
 .navigation-webdev a {
   font-family: "Aldrich", sans-serif;
   font-size: 13px;
-  line-height: 4rem;
+  line-height: 3rem;
   text-decoration-color: blue;
   white-space: nowrap;
 }
@@ -189,14 +189,6 @@ h3 {
   border-radius: 2px;
 }
 
-footer {
-  background: #1D4D72;
-  font-family: 'Montserrat Alternates', sans-serif;
-  text-align: center;
-  grid-column: 1 / 1;
-  padding: 1rem;
-}
-
 .name-info {
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
@@ -208,4 +200,12 @@ footer {
   color: rgba(255, 255, 0, 0.9);
   font-size: 10px;
   margin: 0rem;
+}
+
+footer {
+  background: #1D4D72;
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-align: center;
+  grid-column: 1 / 1;
+  padding: 1rem;
 }
