@@ -1,16 +1,13 @@
 @media screen and (min-width: 520px) {
 
-h1 {
-    padding: 1.4rem;
-    font-size: 2.5rem;
-}
-
 #mobileHeader {
     display: none;
 }
 
 #deskHeader {
     display: block;
+    padding: 1.4rem;
+    font-size: 2.5rem;
 }
 
 .hero {
