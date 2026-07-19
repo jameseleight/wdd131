@@ -12,15 +12,17 @@
     <link rel="stylesheet" href="styles/place-mobile.css">
     <link rel="stylesheet" href="styles/place-landscape.css">
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/getDataWeather.js" defer></script>
+    <script src="scripts/get-data-weather.js" defer></script>
 </head>
 <body>
-    <header id="mobileHeader">DR Congo</header>
-    <header id="deskHeader">Democratic Republic of Congo</header>
+    <header>
+        <h1 id="mobileHeader">DR Congo</h1>
+        <h1 id="deskHeader">Democratic Republic of Congo</h1>
+    </header>
     <main class="hero">
         <picture>
-            <source srcset="images/hero-bonobo-family-landscape.webp" media="(min-width: 520px)">
-            <img src="images/hero-bonobo-stock-portrait.webp" alt="Bonobo in wilderness in DRC" width="618" height="926">
+            <source srcset="images/hero-bonobo-family.webp" media="(min-width: 520px)">
+            <img src="images/hero-bonobo-stock.webp" alt="Bonobo in wilderness in DRC" width="618" height="926">
         </picture>
         <section class="dataSection">
             <h2>Data</h2>
@@ -47,7 +49,7 @@
                     </div>
                     <div class="row">
                         <div class="col1">Time Zone: </div>
-                        <div class="col2"><span id="countryTimeZone"></span></span></div>
+                        <div class="col2"><span id="countryTimeZone"></span></div>
                     </div>
                     <div class="row">
                         <div class="col1">Calling Code: </div>

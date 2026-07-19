@@ -18,16 +18,19 @@
 }
 
 header {
-    display: flex;
-    flex-direction: column;
+    display: block;
     background-color: var(--flagBlueColor2);
     color: var(--textColor);
     font-size: 1.8rem;
-    padding: 1.4rem;
     font-weight: 600;
     text-align: center;
     width: 100%;
     border-radius: .5rem .5rem 0 0;
+}
+
+h1 {
+    padding: 1.7rem;
+    font-size: 1.7rem;
 }
 
 #mobileHeader {
