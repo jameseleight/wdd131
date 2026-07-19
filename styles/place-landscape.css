@@ -19,11 +19,11 @@ header {
 
 .hero {
     position: relative;
-    background-color: var(--flagBlueColor);
+    background-color: var(--flagBlueColor2);
 }
 
 .hero picture img {
-    border-top: .9rem solid var(--flagRedColor);
+    border-top: .9rem solid var(--flagRedColor2);
     border-bottom: none;
 }
 
@@ -41,7 +41,7 @@ h2 {
     font-size: 1.5rem;
     top: 5%;
     left: -3%;
-    background-color: var(--flagRedColor);
+    background-color: var(--flagRedColor2);
     color: var(--textColor);
 }
 

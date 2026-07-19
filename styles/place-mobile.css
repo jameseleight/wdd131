@@ -8,17 +8,19 @@
 
 :root {
     --flagRedColor: rgb(239, 51, 64);
+    --flagRedColor2: rgb(200, 30, 40);
     --flagRedColorTrans: rgb(239, 51, 64, 0.5);
     --flagBlueColor: rgb(0, 133, 202);
+    --flagBlueColor2: rgb(0, 70, 140);
     --flagGoldColor: rgb(255, 209, 0);
-    --textColor: rgb(255, 255, 255, 0.95);
+    --textColor: rgb(255, 255, 255, .95);
     --borderSpec: 1px solid #eee;
 }
 
 header {
     display: flex;
     flex-direction: column;
-    background-color: var(--flagBlueColor);
+    background-color: var(--flagBlueColor2);
     color: var(--textColor);
     font-size: 1.8rem;
     padding: 1.4rem;
@@ -92,10 +94,10 @@ h2 {
 }
 
 footer {
-  background: var(--flagBlueColor);
+  background: var(--flagBlueColor2);
   text-align: center;
   line-height: 1.5rem;
-  color: var(--flagGoldColor);
+  color: var(--textColor);
   grid-column: 1 / 2;
   padding: 1rem;
   width: 100%;
