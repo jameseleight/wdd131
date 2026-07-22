@@ -25,10 +25,10 @@ const wind = 5;
 let wcResult = "N/A"
 
 // Calculate Wind Chill
-if (temperature <= 10 && wind > 4.8) {
-   let windchill = 13.12 + 0.6215*temperature - 11.37*wind**0.16 + 0.3965*temperature*wind**.16;
-    wcResult = windchill.toFixed(2).toString();
+function calculateWindChill(temperature, wind) {
+    return 13.12 + 0.6215 * temperature - 11.37 * wind ** 0.16 + 0.3965 * temperature * wind ** 0.16;
 }
+if(temperature <=10 && wind>4.8){let windchill = calculateWindChill(temperature, wind);wcResult=windchill.toFixed(2).toString();}
 
 // Display weather data
 document.getElementById("kanangaTemperature").textContent = temperature.toString();

@@ -72,7 +72,6 @@ h2 {
 
 .col1 {
     padding: 0.5rem;
-    border: var(--bord);
     justify-items: start;
     text-align: right;
     font-weight: 600;
