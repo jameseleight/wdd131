@@ -1,0 +1,29 @@
+h1 {
+    display: block;
+    padding: 10px auto;
+    text-align: center;
+}
+
+img {
+    margin: 0 auto;
+    background-color: black;
+    width: 400px;
+    min-height: 600px;
+    display: block;
+    opacity: 0;
+    transition: opacity 25s ease;
+}
+
+img.show {
+    opacity: 1;
+}
+
+footer {
+    max-width: 100%;
+    background: rgba(60, 0, 60, 1);
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: .5rem;
+    margin: .5rem .5rem 0 .5rem;
+    font-size: 1.5rem;
+}

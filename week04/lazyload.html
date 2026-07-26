@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals W04 Assignment - James E. Leight</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals W04 lazyload, James E. Leight, Keywords: WebDev, computer science, design">
+    <meta name="author" content="James E. Leight">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Lazy Loading Example</h1>
+        <img src="images/cedar-city.jpg" alt="Cedar City Temple" loading="lazy">
+        <img src="images/los-angeles.jpg" alt="Los Angeles Temple" loading="lazy">
+        <img src="images/nauvoo.jpg" alt="Nauvoo Temple" loading="lazy">
+        <img src="images/newport-beach.jpg" alt="Newport Beach Temple" loading="lazy">
+        <img src="images/phoenix.jpg" alt="Phoenix Temple" loading="lazy">
+        <img src="images/portland-oregon.jpg" alt="Portland Temple" loading="lazy">
+    </main>
+    <footer contenteditable>
+        <p class="name-info">&copy;<span id="currentyear"></span> 🎸 James Eric Leight 🎸 U.S.A</p>
+        <p class="modified">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
