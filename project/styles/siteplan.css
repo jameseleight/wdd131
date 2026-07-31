@@ -1,0 +1,34 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Carter One";
+  font-weight: 400;
+  font-style: normal;
+  color: #C4D2A7;
+  text-align: center;
+  background-color: #253D1B;
+}
+
+p {
+  font-family: "Roboto Flex";
+  font-weight: 200;
+  font-style: normal;
+  color: #253D1B;
+}
+
+img {
+    width: 30rem;
+    height: auto;
+}
+
+footer, .name-info, .modified {
+  background-color: #253D1B;
+  text-align: center;
+  color: #C4D2A7;
+  grid-column: 1 / 1;
+  padding: .5rem;
+}
