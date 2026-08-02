@@ -27,15 +27,15 @@
         <form method="get" action="review.html" class="wf1">
             <label>Product Name
                 <select name="product" id="productName" required>
-                    <option value=""> select a product &#9662;</option>
+                    <option value="" disabled selected> select a product &#9662;</option>
                 </select>
             </label>           
             <fieldset><legend>Overall Rating</legend>
-                <label><input type="radio" name="rating" id="oneStar" required> &star;</label>
-                <label><input type="radio" name="rating" id="&twoStar" required> &star;&star;</label>
-                <label><input type="radio" name="rating" id="threeStar" required> &star;&star;&star;</label>
-                <label><input type="radio" name="rating" id="fourStar" required> &star;&star;&star;&star;</label>
-                <label><input type="radio" name="rating" id="fiveStar" required> &star;&star;&star;&star;&star;</label>
+                <label><input type="radio" name="rating" id="oneStar" value="1" required> &star;</label>
+                <label><input type="radio" name="rating" id="twoStar" value="2" required> &star;&star;</label>
+                <label><input type="radio" name="rating" id="threeStar" value="3" required> &star;&star;&star;</label>
+                <label><input type="radio" name="rating" id="fourStar" value="4" required> &star;&star;&star;&star;</label>
+                <label><input type="radio" name="rating" id="fiveStar" value="5" required> &star;&star;&star;&star;&star;</label>
             </fieldset>
             <label>Date of Installation <input type="date" id="installDate" name="installDate" required></label>
             <div>Which features did you find userful in this product?<br><em>(Check all that apply)</em></div>
@@ -45,7 +45,7 @@
             <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
             <label class="separateText">Written Review <span class="optext">(Optional)</span><textarea id="reviewText" name="review">enter text here</textarea></label>
             <label class="separateText">Your Name <span class="optext">(Optional)</span><input type="text" id="nameText" name="name" value="enter your name"></label>
-            <input type="submit" value="Post Your Review">
+            <label><input type="submit" value="Post Your Review"></label>
         </form>
     </main>
     <footer>
