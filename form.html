@@ -23,26 +23,26 @@
 
     <main>
         <form method="get" action="review.html" class="wf1">
-            <label>Product Name
+            <label for="productName">Product Name
                 <select name="product" id="productName" required>
                     <option value="" disabled selected> select a product &#9662;</option>
                 </select>
             </label>           
             <fieldset><legend>Overall Rating</legend>
-                <label><input type="radio" name="rating" id="oneStar" value="1" required> &star;</label>
-                <label><input type="radio" name="rating" id="twoStar" value="2" required> &star;&star;</label>
-                <label><input type="radio" name="rating" id="threeStar" value="3" required> &star;&star;&star;</label>
-                <label><input type="radio" name="rating" id="fourStar" value="4" required> &star;&star;&star;&star;</label>
-                <label><input type="radio" name="rating" id="fiveStar" value="5" required> &star;&star;&star;&star;&star;</label>
+                <label for="oneStar"><input type="radio" name="rating" id="oneStar" value="1" required> &star;</label>
+                <label for="twoStar"><input type="radio" name="rating" id="twoStar" value="2" required> &star;&star;</label>
+                <label for="threeStar"><input type="radio" name="rating" id="threeStar" value="3" required> &star;&star;&star;</label>
+                <label for="fourStar"><input type="radio" name="rating" id="fourStar" value="4" required> &star;&star;&star;&star;</label>
+                <label for="fiveStar"><input type="radio" name="rating" id="fiveStar" value="5" required> &star;&star;&star;&star;&star;</label>
             </fieldset>
-            <label>Date of Installation <input type="date" id="installDate" name="installDate" required></label>
+            <label for="installDate">Date of Installation <input type="date" id="installDate" name="installDate" required></label>
             <div>Which features did you find userful in this product?<br><em>(Check all that apply)</em></div>
-            <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
-            <label><input type="checkbox" id="ease" name="ease" value="yes"> Ease of Use</label>
-            <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
-            <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
-            <label class="separateText">Written Review <span class="optext">(Optional)</span><textarea id="reviewText" name="review">enter text here</textarea></label>
-            <label class="separateText">Your Name <span class="optext">(Optional)</span><input type="text" id="nameText" name="name" value="enter your name"></label>
+            <label for="durability"><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
+            <label for="ease"><input type="checkbox" id="ease" name="ease" value="yes"> Ease of Use</label>
+            <label for="performance"><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
+            <label for="design"><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+            <label for="reviewText" class="separateText">Written Review <span class="optext">(Optional)</span><textarea id="reviewText" name="review">enter text here</textarea></label>
+            <label for="nameText" class="separateText">Your Name <span class="optext">(Optional)</span><input type="text" id="nameText" name="name" value="enter your name"></label>
             <label><input type="submit" value="Post Your Review"></label>
         </form>
     </main>
