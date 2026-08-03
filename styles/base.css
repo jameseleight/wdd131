@@ -128,6 +128,7 @@ h3 {
   font-size: 12px;
   line-height: 1.5rem;
   margin: 1rem;
+  text-transform: capitalize;
 }
 
 .countryTitle {
@@ -170,6 +171,7 @@ h3 {
   grid-row: 1 / 5;
   justify-items:left;
   align-self:center;
+  list-style-type: disc;
 }
 
 .navigation-webdev a {
