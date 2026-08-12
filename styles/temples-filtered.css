@@ -85,9 +85,9 @@ header h1 {
     padding: 1.5rem 1.75rem;
     background-color: rgb(192, 0, 192, 1);
     color: rgb(255, 255, 255, 0.95);
-    text-align: center;
+    /* text-align: center;
     list-style-type: none;
-    text-decoration: none;
+    text-decoration: none; */
 }
 
 main {

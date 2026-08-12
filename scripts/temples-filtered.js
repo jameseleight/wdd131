@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     mainnav.classList.toggle('show');
     hambutton.classList.toggle('show');
   });
-    
+});
+
   // Determine active page and dispaly filtered photos starting at Home
   const navheader = document.querySelector('#current-page');
   const navItemLink = document.querySelectorAll(".temples-navigation li a");
@@ -142,4 +143,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     return templesList.innerHTML = listCards;
     }
-});

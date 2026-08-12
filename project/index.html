@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals W06 Assignment, Project: Samuel Leight Baseball Career - James E. Leight</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals W06, James E. Leight, Keywords: WebDev, FrontEnd, javascript, baseball">
+    <meta name="author" content="James E. Leight">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base-mobile.css">
+    <link rel="stylesheet" href="styles/base-normalize.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>
+                <a id="menu" href="#">Samuel Leight<br>Baseball Career</a>
+                <a id="bigmenu">Samuel Leight's Baseball Career</a>
+            </h1>
+            <nav>
+                <ul class="samBaseball-navigation">
+                    <li><a href="index.html" title="Home">Home</a></li>
+                    <li><a href="little-league.html" title="Little League">Little League</a></li>
+                    <li><a href="high-school.html" title="High School">High School</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="introduction">
+            <h2>Welcome</h2>
+            <p>This website covers the baseball career of Samuel (Sam) Leight.<br><br>  
+                It includes information and photos for Sam's participation and career in <strong>Little League</strong> and <strong>High School</strong>.</p>
+
+            <h2>The Leight Family</h2>
+            <p>The Leight family consists of <strong>Samuel Leight</strong> and his parents <strong>James</strong> and <strong>Margaret</strong>.<br><br>Samuel was born in the Bay Area in San Ramon, California.  The Leight's have 
+                lived in Torrance, CA for 23 years.  Torrance is a Los Angeles suburb.<br><br>It is close to the <strong>Los Angeles Dodgers</strong> and the <strong>Los Angeles Angels</strong>.
+            </p>
+            <h2>Love of Baseball</h2>
+            <p>The Leight family are True Blue Los Angeles Dodger fans.  James and Margaret attended games when they were dating and first married.  They started to take 
+                Samuel to the games when he was 3 years old.<br><br>They have attended many LA Dodger games and have watched MLB games at many ball parks throughout the 
+                United States.
+            </p>
+            <h2 class="dodgersBlue">Los Angeles Dodgers </h2>
+            <p class="dodgersText">
+                The Los Angeles Dodgers are a National League West Division Team.<br><br>They have many great players.  
+                Dodger Stadium is a classic old time stadium. Going to the games is fun.
+                <a href="https://www.mlb.com/dodgers" title="Los Angeles Dodgers Website">Dodgers Page</a>                
+                <img class="dodgersImg" src="images/los-angeles-dodgers-logo.svg" alt="LA Dodgers Logo">                    
+            </p>
+            <h1>Family Photo Gallery</h1>
+        </div>
+        <ul class="familyCardDisplay" id="familyListDisplay"></ul>
+    </main>
+    <footer contenteditable>
+        <p class="name-info">&copy;<span id="currentyear"></span> 🎸 James Eric Leight 🎸 U.S.A.
+            <span><a class="references" href="references.html" title="references" contenteditable="false">References</a></span></p>
+        <p class="modified">Last Modification:  <span id="lastModified"></span>, <span id="siteVisits"></span> Clicks</p>
+    </footer>
+</body>
+</html>

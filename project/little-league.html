@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals W06 Assignment, Project: Samuel Leight Baseball Career - James E. Leight</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals W06, James E. Leight, Keywords: WebDev, FrontEnd, javascript, baseball">
+    <meta name="author" content="James E. Leight">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base-mobile.css">
+    <link rel="stylesheet" href="styles/base-normalize.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>
+                <a id="menu" href="#">Samuel Leight<br>Baseball Career</a>
+                <a id="bigmenu">Samuel Leight's Baseball Career</a>
+            </h1>
+            <nav>
+                <ul class="samBaseball-navigation">
+                    <li><a href="index.html" title="Home">Home</a></li>
+                    <li><a href="little-league.html" title="Little League">Little League</a></li>
+                    <li><a href="high-school.html" title="High School">High School</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="introduction">
+            <h2>Little League Baseball</h2>
+            <p class="llText">
+                Little League Baseball is an organization that forms local leagues for kids aged 4 to 12 years. There 
+                are lots of rules to protect the players and ensure the games are fair. Little league is great fun for the 
+                players and the entire family!
+                <a href="https://www.littleleague.org/" title="Little League Website">Little League Page</a>
+                <img class="llImg" src="images/little-league-baseball-seeklogo.svg" alt="Litte League Logo">                    
+            </p>
+            <p class="llText">
+                Riviera Little League is where Samuel played little league baseball.  It was a great community and Sam and his
+                family made lots of friends.  It wasn't all a picnic, but a lot of joy came from those years playing ball in our
+                community!
+                <a href="https://www.rivieralittleleague.org/" title="Riviera Little League Website">Riviera Little League Page</a>
+                <img class="llImg2" src="images/IMG-8957-cropped.webp" alt="Riviera Little League Photo">                    
+            </p>
+            <h1>Little League Photo Gallery</h1>
+            <nav>
+                <ul class="llPictures-navigation">
+                    <li><a href="#" title="Cubs">Cubs</a></li>
+                    <li><a href="#" title="Royals">Royals</a></li>
+                    <li><a href="#" title="Knights">Knights</a></li>
+                    <li><a href="#" title="Pirates">Pirates</a></li>
+                </ul>
+            </nav>
+            <p id="ll-current-page"></p>            
+        </div>
+        <ul class="llCardDisplay" id="llListDisplay"></ul>
+    </main>
+    <footer contenteditable>
+        <p class="name-info">&copy;<span id="currentyear"></span> 🎸 James Eric Leight 🎸 U.S.A.
+            <span><a class="references" href="references.html" title="references" contenteditable="false">References</a></span></p>
+        <p class="modified">Last Modification:  <span id="lastModified"></span>, <span id="siteVisits"></span> Clicks</p>
+    </footer>
+</body>
+</html>

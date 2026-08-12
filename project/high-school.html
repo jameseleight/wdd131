@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals W06 Assignment, Project: Samuel Leight Baseball Career - James E. Leight</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals W06, James E. Leight, Keywords: WebDev, FrontEnd, javascript, baseball">
+    <meta name="author" content="James E. Leight">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base-mobile.css">
+    <link rel="stylesheet" href="styles/base-normalize.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>
+                <a id="menu" href="#">Samuel Leight<br>Baseball Career</a>
+                <a id="bigmenu">Samuel Leight's Baseball Career</a>
+            </h1>
+            <nav>
+                <ul class="samBaseball-navigation">
+                    <li><a href="index.html" title="Home">Home</a></li>
+                    <li><a href="little-league.html" title="Little League">Little League</a></li>
+                    <li><a href="high-school.html" title="High School">High School</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="hsIntroduction">
+            <h2>High School Baseball in California</h2>
+            <p>High School baseball is a highly competitive set of regional leagues.<br><br>High School baseball is governed by the CIF - 
+                the California Interscholastic Federation.  
+                <a href="https://www.cifstate.org/sports/baseball/index" title="CIF Baseball">CIF Page</a>
+                <img class="cifImg" src="images/CIF.webp" alt="CIF Logo">
+            </p>
+            <h2>South High Spartans</h2>
+            <p>
+                Samuel played baseball for the South High Spartans.<br><br>            
+                It was great to see Samuel compete and build bonds of friendship with his teammates.
+                <a href="https://www.southhighathletics.com/varsity/baseball/" title="South High Baseball">South High Spartans</a>
+                <img class="shImg" src="images/south-spartan-logo.webp" alt="South High Logo">
+            </p>
+            <h2>Dugout Rennovation Eagle Project</h2>
+            <p>
+                Samuel completed his BSA Eagle Project by rennovating the home team dugout.<br><br>
+                It was an awesome project that everyone loved.  Everyone chipped in to help out!
+                <a href="https://www.scouting.org/" title="Scouting America">Scouting America</a>
+                <img class="bsaImg" src="images/fleur-de-lis-2024-logo-4c-BC.webp" alt="Scouting Logo">
+            </p>
+            <h1>High School Photo Gallery</h1>
+            <form method="get" action="#" class="wf1">
+                <fieldset><legend id="selectedPhotoSet">Pick a Photo Set</legend>
+                    <label for="baseball"><input type="radio" name="photoDispaly" id="action" value="1">Baseball Photos</label>
+                    <label for="eagleProject"><input type="radio" name="photoDispaly" id="project" value="2">Eagle Project Photos</label>
+                </fieldset>
+                <label for="submitButton"><input type="submit" id="clickSubmit" value="Show the Photos"></label>
+            </form>
+            <p id="hs-current-page"></p>
+            <ul class="hsCardDisplay" id="hsListDisplay"></ul>
+        </div>
+    </main>
+    <footer contenteditable>
+        <p class="name-info">&copy;<span id="currentyear"></span> 🎸 James Eric Leight 🎸 U.S.A.
+            <span><a class="references" href="references.html" title="references" contenteditable="false">References</a></span></p>
+        <p class="modified">Last Modification:  <span id="lastModified"></span>, <span id="siteVisits"></span> Clicks</p>
+    </footer>
+</body>
+</html>

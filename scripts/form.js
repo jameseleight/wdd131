@@ -29,14 +29,6 @@ const products = [
 const productList = document.getElementById("productName");
 const optionList = productList.options;
 
-console.log(optionList);
-console.log(optionList[0]);
-console.log(optionList[1]);
-
-for (let i = 0; i < optionList.length; i++) {
-    console.log(optionList[i]);
-}
-
 for (let j = 0; j < products.length; j++) {
     const newOption = document.createElement("option");
     newOption.textContent = products[j].name;
